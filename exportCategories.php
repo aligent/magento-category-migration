@@ -64,6 +64,8 @@ class Mage_Shell_ExportCategories extends Mage_Shell_Abstract
             'metaTitle'        => $category->getMetaTitle(),
             'metaKeywords'     => $category->getMetaKeywords(),
             'metaDescription'  => $category->getMetaDescription(),
+            'thumbnail'        => $category->getThumbnail(),
+            'image'            => $category->getImage()
         );
         echo str_repeat('  ', $depth);
         echo '* ' . $category->getName() . sprintf(' (%s products)', $category->getProductCount()) . PHP_EOL;
