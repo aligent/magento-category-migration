@@ -67,13 +67,15 @@ class Mage_Shell_ImportCategories extends Mage_Shell_Abstract
         $category->setMetaDescription($data[18]);
         $category->setThumbnail($data[19]);
         $category->setImage($data[20]);
-        $category->setHeaderBackgroundColour($data[21]);
-        $category->setHeaderTextBackgroundColour($data[22]);
-        $category->setHeaderTextDescription($data[23]);
-        $category->setHeaderSubHeading($data[24]);
-        $category->setHeaderHeadingColour($data[25]);
-        $category->setHeaderBodyColour($data[26]);
-        $category->setHeaderSubHeadingColour($data[27]);
+        $category->setRelatedFragrance($data[21]),
+        $category->setTips($data[22]),
+        $category->setHeaderBackgroundColour($data[23]);
+        $category->setHeaderTextBackgroundColour($data[24]);
+        $category->setHeaderTextDescription($data[25]);
+        $category->setHeaderSubHeading($data[26]);
+        $category->setHeaderHeadingColour($data[27]);
+        $category->setHeaderBodyColour($data[28]);
+        $category->setHeaderSubHeadingColour($data[29]);
         $category->save();
         $category = Mage::getModel('catalog/category')->load($data[0]);
         echo $category->getId() ? $category->getId() : '⚡';
