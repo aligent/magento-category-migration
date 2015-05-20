@@ -65,7 +65,16 @@ class Mage_Shell_ExportCategories extends Mage_Shell_Abstract
             'metaKeywords'     => $category->getMetaKeywords(),
             'metaDescription'  => $category->getMetaDescription(),
             'thumbnail'        => $category->getThumbnail(),
-            'image'            => $category->getImage()
+            'image'            => $category->getImage(),
+            'related_fragrance'=> $category->getRelatedFragrance(),
+            'tips'             => $category->getTips(),
+            'header_background_colour'      => $category->getHeaderBackgroundColour(),
+            'header_text_background_colour' => $category->getHeaderTextBackgroundColour(),
+            'header_text_description'       => $category->getHeaderTextDescription(),
+            'header_sub_heading'            => $category->getHeaderSubHeading(),
+            'header_heading_colour'         => $category->getHeaderHeadingColour(),
+            'header_body_colour'            => $category->getHeaderBodyColour(),
+            'header_sub_heading_colour'     => $category->getHeaderSubHeadingColour()
         );
         echo str_repeat('  ', $depth);
         echo '* ' . $category->getName() . sprintf(' (%s products)', $category->getProductCount()) . PHP_EOL;
