@@ -67,8 +67,8 @@ class Mage_Shell_ImportCategories extends Mage_Shell_Abstract
         $category->setMetaDescription($data[18]);
         $category->setThumbnail($data[19]);
         $category->setImage($data[20]);
-        $category->setRelatedFragrance($data[21]),
-        $category->setTips($data[22]),
+        $category->setRelatedFragrance($data[21]);
+        $category->setTips($data[22]);
         $category->setHeaderBackgroundColour($data[23]);
         $category->setHeaderTextBackgroundColour($data[24]);
         $category->setHeaderTextDescription($data[25]);
